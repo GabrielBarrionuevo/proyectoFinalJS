@@ -1,0 +1,58 @@
+[
+    { 
+        "id": 1, 
+        "nombre": "Clasica",         
+        "precio": 10, 
+        "categoria": "normal",   
+        "descripcion": "Solo papitas" 
+    },
+    { 
+        "id": 2, 
+        "nombre": "Clasica",         
+        "precio": 20, 
+        "categoria": "deluxe",   
+        "descripcion": "Solo papitas" 
+    },
+    { 
+        "id": 3, 
+        "nombre": "Cheddar",         
+        "precio": 15, 
+        "categoria": "normal",   
+        "descripcion": "Con queso cheddar" 
+    },
+    { 
+        "id": 4, 
+        "nombre": "Wasabi",          
+        "precio": 15, 
+        "categoria": "normal",   
+        "descripcion": "Con condimento picante wasabi" 
+    },
+    { 
+        "id": 5, 
+        "nombre": "Wacamole",        
+        "precio": 20, 
+        "categoria": "premium",  
+        "descripcion": "Con wacamole. Se le puede agregar tomate." 
+    },
+    { 
+        "id": 6, 
+        "nombre": "Queso Y Cebolla", 
+        "precio": 20, 
+        "categoria": "premium",  
+        "descripcion": "Con queso y cebolla. Se le puede agregar un poco mas de cebolla a elección" 
+    },
+    { 
+        "id": 7, 
+        "nombre": "Queso Gratinado", 
+        "precio": 30, 
+        "categoria": "deluxe",   
+        "descripcion": "Con queso gratinado a elección (no cheddar)" 
+    },
+    { 
+        "id": 8, 
+        "nombre": "Sal-Marina",      
+        "precio": 35, 
+        "categoria": "deluxe",   
+        "descripcion": "Con sal marina. Se le puede agregar alguna salsa a elección (no wasabi o wacamole)" 
+    }
+]

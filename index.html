@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+    </head>
+    <body>
+    <header>
+        <!-- Menu principal -->
+        <h1>NombreLocal</h1>
+        <div id="contenedorCarrito">
+            <a id="linkCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <img src="" alt="Carrito de compras">
+            </a>
+        </div>
+    </header>
+    
+    <div id="principal">
+    
+        <!-- Aside -->
+        <aside id="aside">
+
+    
+            <!-- BUSCAR POR NOMBRE -->
+            <section class="bg-warning bg-gradient">
+                <article>
+                    <form id="form-buscarXNombre">
+                        <fieldset class="filtros">
+                        <legend>Buscar por nombre</legend>
+                        <input id="buscaXNombre" placeholder="Buscar por nombre">
+                        <div id="filtradoPorNombre"></div>
+                        <button class="btn-filtroNombre" type="submit" data-toggle="modal" id="btn-filtrarNombre">Aplicar</button>
+                    </form>
+                </article>
+            </section>
+            <!-- FILTRAR POR PRECIO -->
+            <section class="bg-secondary bg-gradient">
+                <article>
+                    <form id="form-buscarXRango">
+                        <fieldset class="filtros">
+                            <legend>Ingrese rando de precios</legend>
+                            <input id="baseDePrecio" placeholder="Precio mínimo">
+                            <input id="topeDeprecio" placeholder="Precio máximo">
+                            <button class="btn-accion btn-filtrarXRango" type="submit" id="btn-filtrarXRango">Aplicar</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </aside>
+    
+        <main>
+            <h2>Papitas</h2>
+            <div id="contenedorBuscarPorNombre" class="d-flex flex-row bg-warning bg-gradient"></div>
+            <div id="contenedorRangoPrecios" class="d-flex flex-row bg-secondary bg-gradient"></div>
+            <div id="contenedorStore" class="d-flex flex-row">
+
+                <section class="contProducto">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="item">
+                                <h3 class="item-title">Pepita prueba</h3>
+                                <img class="item-image" src="papita.jpg">
+                                <div class="item-details">
+                                    <h4 class="item-categoria">DE  LUJO</h4>
+                                    <h4 class="item-id">ID Producto: 666</h4>
+                                    <h4 class="item-price">1000000</h4>
+                                    <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+    
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal">Comprar</button>
+                        <!-- data-target="#comprarModal" -->
+                    </div>
+                </div>
+            </div>
+            <!-- END TOTAL -->
+        </div>
+    
+    </section>
+    <!-- END SECTION SHOPPING CART -->
+    
+    
+        </main>
+
+        <footer>
+            <div id="contSocial">
+                <h3>Redes Sociales</h3>
+                <!-- Icono redes -->
+                <div>
+            </div>
+            <p>Hecho por...</p>
+        </footer>
+    </div>
+
+
+    <!-- CDN Sweet Alert -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- BOOTSTRAPS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
