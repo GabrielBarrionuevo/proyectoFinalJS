@@ -8,6 +8,36 @@ async function fetchPapitas() {
  // Llamo a esa función
 let listaPapitas = [];
 
+let listaPapitas2 = [
+    { id: 01, nombre: "PapitaDesdeJavaScript1",         precio: 10, categoria: "normal",   descripcion: "Solo papitas" },
+    { id: 02, nombre: "PapitaDesdeJavaScript2",         precio: 20, categoria: "deluxe",   descripcion: "Solo papitas" },
+    { id: 03, nombre: "PapitaDesdeJavaScript3",         precio: 15, categoria: "normal",   descripcion: "Con queso cheddar" },
+];
+
+//Listado productos
+for (papita of listaPapitas2) {
+    let contenedor = document.createElement("section");
+    contenedor.innerHTML = `
+    <section class="contProducto">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="item">
+                    <h3 class="item-title">${papita.nombre}</h3>
+                    <img class="item-image" src="papita.jpg">
+                    <div class="item-details">
+                        <h4 class="item-categoria">${papita.categoria}</h4>
+                        <h4 class="item-id">ID Producto: ${papita.id}</h4>
+                        <h4 class="item-price">$${papita.precio}</h4>
+                        <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    `;
+    contenedorStore.appendChild(contenedor);
+};
+
 fetchPapitas().then(papita => {
     listaPapitas = papita
     mostrarListaPapitas();
